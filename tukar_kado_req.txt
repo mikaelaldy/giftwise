@@ -1,0 +1,44 @@
+requirement text tukar kado:
+1. Fungsi Utama Aplikasi
+Memberikan rekomendasi item tukar kado berdasarkan preferensi pengguna dan anggaran yang ditentukan.
+Mengelola data peserta seperti nama, preferensi kado, anggaran, dan informasi tambahan.
+2. Fitur Utama
+a. Pengelolaan Peserta
+Form input data peserta (nama lengkap, preferensi kado, anggaran, alamat, dll.).
+Validasi input untuk memastikan data lengkap dan akurat.
+b. Rekomendasi Item
+Algoritma rekomendasi menggunakan Google Studio LLM API berdasarkan:
+Anggaran (range harga).
+Preferensi item (kategori, warna, jenis, dll.).
+Data peserta lain (misalnya pola preferensi umum).
+c. Shuffle/Pairing
+Sistem pairing peserta secara acak untuk menentukan siapa memberi kado ke siapa.
+Keamanan pairing (tanpa kebocoran data).
+d. Dashboard Admin
+Lihat daftar peserta dan preferensi mereka.
+Konfirmasi hasil pairing sebelum dikirim ke peserta.
+e. Frontend untuk User
+User-friendly interface untuk memasukkan data.
+Halaman hasil pairing dan rekomendasi kado.
+3. Teknologi yang Digunakan
+a. Backend
+Google Studio LLM API untuk rekomendasi item.
+Express.js (Node.js) atau Django untuk server.
+Database: PostgreSQL atau MongoDB untuk menyimpan data peserta dan pairing.
+b. Frontend
+Framework: React.js atau Next.js.
+CSS: TailwindCSS untuk tampilan responsif.
+c. Deployment
+Google Cloud Platform (GCP) untuk hosting.
+Firebase atau Supabase untuk autentikasi, jika diperlukan.
+4. Requirement Non-Fungsional
+Keamanan Data: Informasi pribadi peserta harus dienkripsi.
+Performance: Rekomendasi harus dihasilkan dalam waktu <1 detik.
+Responsif: Tampilan mendukung desktop dan mobile.
+5. Flow Pengguna
+Pengguna mengisi form data peserta.
+Sistem memproses dan menyimpan data.
+Sistem menghasilkan rekomendasi item berdasarkan preferensi.
+Admin memeriksa dan mengkonfirmasi pairing.
+Peserta menerima notifikasi hasil pairing.
+Apa kamu punya tambahan atau revisi untuk poin-poin di atas?

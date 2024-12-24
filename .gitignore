@@ -1,0 +1,5 @@
+node_modules
+giftwise-frontend/node_modules
+giftwise-backend/node_modules
+giftwise-frontend/.next
+giftwise-backend/.env
